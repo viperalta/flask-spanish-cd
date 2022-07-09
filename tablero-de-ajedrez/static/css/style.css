@@ -1,0 +1,21 @@
+.fila{
+    display: flex;
+}
+
+.cuadrado{
+    width: 20px;
+    height: 20px;
+}
+
+.fila:nth-child(odd) .cuadrado:nth-child(odd){
+    background-color: red;
+}
+.fila:nth-child(odd) .cuadrado:nth-child(even){
+    background-color: black;
+}
+.fila:nth-child(even) .cuadrado:nth-child(odd){
+    background-color: black;
+}
+.fila:nth-child(even) .cuadrado:nth-child(even){
+    background-color: red;
+}

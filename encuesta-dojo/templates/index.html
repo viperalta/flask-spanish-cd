@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <form class="mb-3" action="/process" method="post">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="nombre" class="form-control" id="nombre" name="nombre" placeholder="Vicente">
+                      </div>
+                      <div class="mb-3">
+                        <label for="lugar" class="form-label">Lugar Dojo</label>
+                        <select class="form-select" aria-label="Default select example" name="lugar" id="lugar">
+                            <option selected value="Santiago">Santiago</option>
+                            <option value="Valdivia">Valdivia</option>
+                            <option value="Talca">Talca</option>
+                            <option value="Chicago">Chicago</option>
+                          </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="lenguaje" class="form-label">Lenguaje Favorito</label>
+                        <select class="form-select" aria-label="Default select example" name="lenguaje" id="lenguaje">
+                            <option selected value="Javascript">Javascript</option>
+                            <option value="Python">Python</option>
+                            <option value="C#">C#</option>
+                            <option value="PHP">PHP</option>
+                          </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="comentarios" class="form-label">Comentarios:</label>
+                        <textarea  class="form-control rounded-0" id="comentarios" name="comentarios"></textarea>
+                      </div>
+                      <input class="btn btn-primary" type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
